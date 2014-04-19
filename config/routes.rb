@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
   root 'home#index'
+
   get 'users/index'
 
   get 'users/new'
 
   get 'users/edit'
 
-  get 'users/update'
+  get 'users/updates'
 
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.

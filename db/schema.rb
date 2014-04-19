@@ -11,7 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140419104414) do
+ActiveRecord::Schema.define(version: 20140419111934) do
+
+  create_table "notifications", force: true do |t|
+    t.integer  "opportunity_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "opportunities", force: true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.string   "category"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "first_name"
