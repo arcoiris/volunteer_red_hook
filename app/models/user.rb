@@ -4,5 +4,5 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
   has_many :opportunities
-  has_many :notification, through: :listings
+  has_many :notifications, through: :listings
 end
