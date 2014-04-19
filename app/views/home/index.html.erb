@@ -1,1 +1,13 @@
-<h1>Volunteer Hook</h1>
+<div class="row">
+	<div class="small-6 small-centered column">
+		<% if user_signed_in? %>
+			 Homepage
+		<% else %>
+			<div class="panel">
+				<h1>Volunteer Hook</h1>
+				<p>Get help & give help. Are you hooked?</p>
+				<p><%= link_to "Sign Up", new_user_registration_path, class: "button" %></p>
+			</div>
+		<% end %>
+	</div>
+</div>
