@@ -1,4 +1,24 @@
 Rails.application.routes.draw do
+  get 'opportunities/new'
+
+  get 'opportunities/create'
+
+  get 'opportunities/edit'
+
+  get 'opportunities/update'
+
+  get 'opportunities/index'
+
+  get 'opportunites/new'
+
+  get 'opportunites/create'
+
+  get 'opportunites/edit'
+
+  get 'opportunites/update'
+
+  get 'opportunites/destroy'
+
   root 'home#index'
 
   get 'users/index'
